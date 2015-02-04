@@ -101,9 +101,9 @@ def split_list(items, idx):
     return
 
 
-assert split_list([1, 2, 3, 4, 5, 6], idx=3) == ([1, 2, 3, 4], [5, 6])
-assert split_list([1, 2, 3, 4, 5, 6], idx=1) == ([1, 2], [3, 4, 5, 6])
-assert split_list([1, 2, 3, 4, 5, 6], idx=0) == ([1], [2, 3, 4, 5, 6])
+assert split_list([1, 2, 3, 4, 5, 6], idx=3) == ([1, 2, 3], [4, 5, 6])
+assert split_list([1, 2, 3, 4, 5, 6], idx=1) == ([1], [2, 3, 4, 5, 6])
+assert split_list([1, 2, 3, 4, 5, 6], idx=0) == ([], [, 12, 3, 4, 5, 6])
 assert split_list([1, 2, 3, 4, 5, 6], idx=1000) == ([1, 2, 3, 4, 5, 6], [])
 
 assert split_list([], idx=0) == ([], [])
@@ -144,10 +144,10 @@ def quick_sort(items):
     # TODO: Fill this in.
     return
 
-assert merge_sort([1, 2, 3, 4]) == [1, 2, 3, 4]
-assert merge_sort([3, 2, 1, 4]) == [1, 2, 3, 4]
-assert merge_sort(reversed(range(1000))) == range(1000)
-assert merge_sort([]) == []
+assert quick_sort([1, 2, 3, 4]) == [1, 2, 3, 4]
+assert quick_sort([3, 2, 1, 4]) == [1, 2, 3, 4]
+assert quick_sort(reversed(range(1000))) == range(1000)
+assert quick_sort([]) == []
 
 print("quick_sort completed")
 

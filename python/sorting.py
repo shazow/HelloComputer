@@ -103,7 +103,7 @@ def split_list(items, idx):
 
 assert split_list([1, 2, 3, 4, 5, 6], idx=3) == ([1, 2, 3], [4, 5, 6])
 assert split_list([1, 2, 3, 4, 5, 6], idx=1) == ([1], [2, 3, 4, 5, 6])
-assert split_list([1, 2, 3, 4, 5, 6], idx=0) == ([], [, 12, 3, 4, 5, 6])
+assert split_list([1, 2, 3, 4, 5, 6], idx=0) == ([], [1, 2, 3, 4, 5, 6])
 assert split_list([1, 2, 3, 4, 5, 6], idx=1000) == ([1, 2, 3, 4, 5, 6], [])
 
 assert split_list([], idx=0) == ([], [])
